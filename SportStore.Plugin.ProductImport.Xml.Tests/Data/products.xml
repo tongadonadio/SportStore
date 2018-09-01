@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Products>
+	<Product>
+		<Name>texto</Name>
+		<Description>texto</Description>
+		<Manufacturer>Unspecified</Manufacturer>
+		<Price>1.00</Price>
+		<Stock>10</Stock>
+		<Category>Default</Category>
+	</Product>
+</Products>

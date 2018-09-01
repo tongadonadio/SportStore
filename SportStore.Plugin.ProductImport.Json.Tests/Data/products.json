@@ -1,0 +1,10 @@
+[
+  {
+    "name": "texto",
+    "description": "texto",
+    "manufacturerName": "Unspecified",
+    "price": 1.00,
+    "stock": 10,
+    "categoryName":  "Default"
+  }
+]

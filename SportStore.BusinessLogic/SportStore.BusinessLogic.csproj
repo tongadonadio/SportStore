@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{487F04B0-471C-43BA-9E92-942F3A08F679}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SportStore.BusinessLogic</RootNamespace>
+    <AssemblyName>SportStore.BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IAuthBusinessLogic.cs" />
+    <Compile Include="ICartBusinessLogic.cs" />
+    <Compile Include="ICategoryBusinessLogic.cs" />
+    <Compile Include="ICRUDBusinessLogic.cs" />
+    <Compile Include="IConfigBusinessLogic.cs" />
+    <Compile Include="IManufacturerBusinessLogic.cs" />
+    <Compile Include="IPaymentMethodBusinessLogic.cs" />
+    <Compile Include="IManagementBusinessLogic.cs" />
+    <Compile Include="IPluginBusinessLogic.cs" />
+    <Compile Include="IProductBusinessLogic.cs" />
+    <Compile Include="IPurchaseBusinessLogic.cs" />
+    <Compile Include="IReviewBusinessLogic.cs" />
+    <Compile Include="IRoleBusinessLogic.cs" />
+    <Compile Include="IShippingAddressBusinessLogic.cs" />
+    <Compile Include="ISportStoreBusinessLogic.cs" />
+    <Compile Include="IUserBusinessLogic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SportStore.Model\SportStore.Model.csproj">
+      <Project>{831f6750-67b2-4658-8da5-45cfd46cc917}</Project>
+      <Name>SportStore.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SportStore.PlugIn\SportStore.Plugin.csproj">
+      <Project>{03cc432f-00f5-4c0b-ac5d-4c9c8138839d}</Project>
+      <Name>SportStore.Plugin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

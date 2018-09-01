@@ -1,0 +1,550 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SportStore",
+		"_postman_id": "513fa6be-45de-4fa5-8b9d-3d2501c49076",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Category",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/Category/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Ropa\",\n\t\"Description\": \"Remeras, abrigos, prendas de vestir, etc\",\n\t\"CustomFields\": [\n\t\t{\n\t\t\t\"Name\": \"Talle\",\n\t\t\t\"Description\": \"S/M/L/XL\"\n\t\t},\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/Category/Ropa",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Ropa\",\n\t\"Description\": \"Remeras, abrigos, prendas de vestir, etc\",\n\t\"CustomFields\": [\n\t\t{\n\t\t\t\"Name\": \"Talle\",\n\t\t\t\"Description\": \"S/M/L/XL\"\n\t\t},\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Category",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/Category/Ropa",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Ropa\",\n\t\"Description\": \"Remeras, pantalones, abrigos, ropa de vestir, ropa de playa, etc\",\n\t\"CustomFields\": [\n\t\t{\n\t\t\t\"Name\": \"Talle\",\n\t\t\t\"Description\": \"S/M/L/XL\"\n\t\t}\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/Category/Ropa",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Ropa\",\n\t\"Description\": \"Remeras, abrigos, prendas de vestir, etc\",\n\t\"CustomFields\": [\n\t\t{\n\t\t\t\"Name\": \"Talle\",\n\t\t\t\"Description\": \"S/M/L/XL\"\n\t\t},\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List Categories",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/Category/",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Ropa\",\n\t\"Description\": \"Remeras, abrigos, prendas de vestir, etc\",\n\t\"CustomFields\": [\n\t\t{\n\t\t\t\"Name\": \"Talle\",\n\t\t\t\"Description\": \"S/M/L/XL\"\n\t\t},\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Manufacturer",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Manufacturer",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/Manufacturer/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Levi's\",\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Manufacturer",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/Manufacturer/Levi's",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Ropa\",\n\t\"Description\": \"Remeras, abrigos, prendas de vestir, etc\",\n\t\"CustomFields\": [\n\t\t{\n\t\t\t\"Name\": \"Talle\",\n\t\t\t\"Description\": \"S/M/L/XL\"\n\t\t},\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Manufacturer",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/Manufacturer/Levi's",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Levi-s\",\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Manufacturer",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/Manufacturer/Levi's",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List Manufacturers",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/Manufacturer/",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Ropa\",\n\t\"Description\": \"Remeras, abrigos, prendas de vestir, etc\",\n\t\"CustomFields\": [\n\t\t{\n\t\t\t\"Name\": \"Talle\",\n\t\t\t\"Description\": \"S/M/L/XL\"\n\t\t},\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Product",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/Product/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Remera\",\n\t\"Description\": \"Remera azul\",\n\t\"Manufacturer\": {\n\t\t\"Name\": \"Levi's\" \n\t},\n\t\"Price\": 130,\n\t\"Category\": {\n\t\t\"Name\": \"Ropa\"\n\t},\n\t\"CustomFields\": [\n\t\t{\n\t\t\t\"CustomFieldName\": \"Talle\",\n\t\t\t\"Value\": \"S\"\n\t\t},\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/Product/190c744c-985b-4b1d-b420-78bf496a6aea",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Remera\",\n\t\"Description\": \"Remera azul\",\n\t\"Manufacturer\": {\n\t\t\"Name\": \"Levi's\" \n\t},\n\t\"Price\": 130,\n\t\"Category\": {\n\t\t\"Name\": \"Ropa\"\n\t},\n\t\"CustomFields\": [\n\t\t{\n\t\t\t\"CustomFieldName\": \"Talle\",\n\t\t\t\"Value\": \"S\"\n\t\t},\n\t]\n}"
+						},
+						"description": "Product.Create"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Product",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/Product/190c744c-985b-4b1d-b420-78bf496a6aea",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Code\": \"190c744c-985b-4b1d-b420-78bf496a6aea\",\n\t\"Name\": \"Remera\",\n\t\"Description\": \"Remera de manga corta azul\",\n\t\"Manufacturer\": {\n\t\t\"Name\": \"Levi's\" \n\t},\n\t\"Price\": 130,\n\t\"Category\": {\n\t\t\"Name\": \"Ropa\"\n\t},\n\t\"CustomFields\": [\n\t\t{\n\t\t\t\"CustomFieldName\": \"Talle\",\n\t\t\t\"Value\": \"S\"\n\t\t},\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/Product/190c744c-985b-4b1d-b420-78bf496a6aea",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List Products",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/Product/",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Remera\",\n\t\"Description\": \"Remera azul\",\n\t\"Manufacturer\": {\n\t\t\"Name\": \"Levi's\" \n\t},\n\t\"Price\": 130,\n\t\"Category\": {\n\t\t\"Name\": \"Ropa\"\n\t},\n\t\"CustomFields\": [\n\t\t{\n\t\t\t\"CustomFieldName\": \"Talle\",\n\t\t\t\"Value\": \"S\"\n\t\t},\n\t]\n}"
+						},
+						"description": "Product.Create"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"description": "",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/User/Login?username=agurz&password=***",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/User/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"FirstName\": \"Agustín\",\n\t\"LastName\": \"Rodríguez\",\n\t\"UserName\": \"agurz\",\n\t\"Password\": \"***\",\n\t\"Email\": \"agurz@icloud.com\",\n\t\"Address\": \"ABC 1234\",\n\t\"Role\": {\n\t\t\"Name\": \"Administrator\"\n\t},\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/User/agurz",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"FirstName\": \"Agustín\",\n\t\"LastName\": \"Rodríguez\",\n\t\"UserName\": \"agurz\",\n\t\"Password\": \"***\",\n\t\"Email\": \"agurz@icloud.com\",\n\t\"Address\": \"ABC 1234\",\n\t\"Role\": {\n\t\t\"Name\": \"Administrator\"\n\t},\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Edit User",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/User/agurz",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"FirstName\": \"Agustín\",\n\t\"LastName\": \"Rodríguez\",\n\t\"UserName\": \"agurz\",\n\t\"Password\": \"***\",\n\t\"Email\": \"agurz@icloud.com\",\n\t\"Address\": \"18 de Julio 1234\",\n\t\"Role\": {\n\t\t\"Name\": \"Administrator\"\n\t},\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/User/agurz",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List Users",
+					"request": {
+						"url": "http://{{host}}:{{port}}/api/User/",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-SPORTSTORE-AUTH-TOKEN",
+								"value": "{{authToken}}",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Name\": \"Ropa\",\n\t\"Description\": \"Remeras, abrigos, prendas de vestir, etc\",\n\t\"CustomFields\": [\n\t\t{\n\t\t\t\"Name\": \"Talle\",\n\t\t\t\"Description\": \"S/M/L/XL\"\n\t\t},\n\t]\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

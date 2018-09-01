@@ -1,0 +1,43 @@
+﻿<Window x:Class="SportStore.App.Management.Windows.CustomFieldValueWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SportStore.App.Management.Windows"
+        mc:Ignorable="d"
+        Title="CustomFieldValueWindow" WindowStartupLocation="CenterScreen" DataContext="{Binding RelativeSource={RelativeSource Self}}" SizeToContent="WidthAndHeight" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid Width="320" Margin="8,8,8,8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel HorizontalAlignment="Stretch">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Custom Field" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="CustomFieldComboBox" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" SelectedValue="{Binding CustomFieldValue.CustomField}" DisplayMemberPath="Name" />
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Value" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                    <TextBox Grid.Column="1" HorizontalAlignment="Stretch" TextWrapping="Wrap" VerticalAlignment="Center" Text="{Binding CustomFieldValue.Value}"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1" VerticalAlignment="Bottom" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="8">
+                <Button Content="Ok" Padding="8,4" Click="OkButton_Click" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
